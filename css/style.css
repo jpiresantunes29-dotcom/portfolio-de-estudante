@@ -1154,6 +1154,19 @@ a { color: inherit; }
   .tech-strip {
     gap: 32px;
   }
+
+  .edu {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .edu__logo {
+    justify-content: flex-start;
+  }
+
+  .edu__logo img {
+    max-width: 160px;
+  }
 }
 
 @media (max-width: 640px) {
@@ -1193,7 +1206,7 @@ a { color: inherit; }
   }
 
   .edu__logo img {
-    max-width: 120px;
+    max-width: 140px;
   }
 
   .exp-card {
