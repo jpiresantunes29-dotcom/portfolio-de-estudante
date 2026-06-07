@@ -41,7 +41,16 @@
       <div class="container contact-grid">
         <!-- Coluna esquerda: Formulário -->
         <div class="contact-form-wrapper">
-          <form class="contact-form" action="../agradecimento/agradecimento.html" method="get">
+          <form class="contact-form" action="https://formsubmit.co/jpires.antunes29@gmail.com" method="POST">
+            <!-- FormSubmit: redirecionar para página de agradecimento após envio -->
+            <input type="hidden" name="_next" value="https://joaopedroportfolio.vercel.app/contato/agradecimento/agradecimento.html">
+            <!-- FormSubmit: desabilitar captcha padrão -->
+            <input type="hidden" name="_captcha" value="false">
+            <!-- FormSubmit: formatar email como tabela -->
+            <input type="hidden" name="_template" value="table">
+            <!-- FormSubmit: assunto do email -->
+            <input type="hidden" name="_subject" value="Nova mensagem do portfólio!">
+
             <div class="form-field">
               <label for="nome">Nome</label>
               <input
